@@ -19,6 +19,11 @@ func BenchmarkIteration(b *testing.B) {
 		Iterate("a", i)
 	}
 }
+func BenchmarkBadIteration(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		BadIterate("a", i)
+	}
+}
 
 func ExampleIteration() {
 	got := Iterate("b", 1)
