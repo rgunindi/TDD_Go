@@ -1,25 +1,26 @@
 package perimeter
-type Circle struct{
-	field float64
+
+import "math"
+type Circle struct {
+	Radius float64
 }
 type Rectangle struct {
 	width  float64
 	height float64
 }
-func (r Rectangle) Area(){
-	
+func (r Rectangle) Area() float64 {
+	d := Rectangle{
+		width:  r.width,
+		height: r.height,
+	}
+	return d.width * d.height
 }
-type common interface{
-	Rectangle
-	Circle
+func (c Circle) Area() float64{
+	return math.Pow(c.Radius,2.0)  * math.Pi
 }
 func Perimeter(r Rectangle) float64 {
 	return 2 * (r.width + r.height)
 }
-func Area(w Rectangle) float64 {
-	d := Rectangle{
-		width:  w.width,
-		height: w.height,
-	}
-	return d.width * d.height
+func Area(r Rectangle) float64 {
+	return 0
 }
