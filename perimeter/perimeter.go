@@ -8,6 +8,9 @@ type Rectangle struct {
 	width  float64
 	height float64
 }
+type Shape interface{
+	Area() float64
+}
 func (r Rectangle) Area() float64 {
 	d := Rectangle{
 		width:  r.width,
