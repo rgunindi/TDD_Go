@@ -1,0 +1,32 @@
+repo_name: rgunindi/TDD_Go
+report_id: 2ec0e5f5b822c3e3e75389b2d00ec6b7
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-08T19:41:53+00:00'
+requested_by: rgunindi
+provider: github
+branch: tdd/v1
+detected_tools_count: 2
+tools:
+- name: Golang
+  description: An open source programming language that makes it easy to build simple,
+    reliable, and efficient software
+  website_url: http://golang.org/
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1005/O6AczwfV_400x400.png
+  detection_source_url: https://github.com/rgunindi/TDD_Go
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/rgunindi/TDD_Go
+  detection_source: Repo Metadata
